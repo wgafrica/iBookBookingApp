@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>| Payment</title>
+    <link rel="icon" href="ibook.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+    </script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #h1 {
+            background-image: linear-gradient(#EA8070, #EA8054);
+            height: 23vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #h2 {
+            background-color: #fff;
+            height: 70vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        ul {
+            float: left;
+            list-style-type: none;
+            margin-top: 60px;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.6s ease;
+        }
+
+        ul li a:hover {
+            background-color: #fff;
+            color: #EA8054;
+        }
+
+        .logo img {
+            float: right;
+            width: 100px;
+            height: auto;
+            padding-top: 40px;
+        }
+
+        .main {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        ul li.active a {
+            background-color: #fff;
+            color: #EA8054;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .btn {
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.6s ease;
+
+        }
+
+        .btn:hover {
+            background-color: #EA8054;
+            color: #fff;
+        }
+
+        .s2 {
+            color: #fff;
+            height: 100vh;
+        }
+
+        h2 {
+            padding-top: 220px;
+            font-size: 60px;
+            color: #fff;
+        }
+
+        button {
+            color: #fff;
+            background-color: rgb(240, 122, 93);
+            width: 110px;
+            height: 50px;
+            border: 3px solid rgb(240, 122, 93);
+            border-radius: 35px;
+            font-size: 14px;
+            box-shadow: 1px 6px 12px rgba(75, 55, 32, 0.3);
+            margin-bottom: 30px;
+            margin-top: 10px;
+            position: center;
+        }
+
+        input[type=date]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            display: none;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(211, 95, 66);
+        }
+
+        input {
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+
+        .form {
+            font-weight: bold;
+            color: rgb(66, 66, 66);
+            background-color: rgb(236, 236, 236);
+            width: 650px;
+            border-radius: 10px;
+        }
+
+        #cardno, #nameoncard {
+            width: 200px;
+        }
+
+        #expiry, #cvv {
+            width: 80px;
+        }
+
+        #state, #city {
+            width: 100px;
+            }
+
+        #zip {
+            width: 60px;
+        }   
+
+        #return{
+            color: rgb(226, 152, 83);
+            background-color: rgb(211, 211, 211);
+            width: 130px;
+            height: 50px;
+            border: 3px solid rgb(211, 211, 211);
+            border-radius: 35px;
+            font-size: 14px;
+            box-shadow: 1px 6px 12px rgba(75, 55, 32, 0.3);
+            margin-bottom: 30px;
+            margin-top: 10px;
+            position: center;
+        }
+
+        #img{
+            padding-top: 100px;
+        }
+
+        a{
+                text-decoration: none;
+                color: white;
+            }
+
+    </style>
+</head>
+
+<body>
+    <!-- Section 1 -->
+    <header id="h1">
+        <div class="main">
+            <div class="logo">
+                <img src="ibook2.png">
+            </div>
+            <ul><b>
+                    <li><a href="Home.html" id="home">Home</a></li>
+                    <li class="active"><a href="#" id="flights">Flights</a></li>
+                    <li><a href="#" id="rewards">Rewards</a></li>
+                    <li><a href="#" id="profile">Profile</a></li>
+                    <li><a href="#" id="settings">Settings</a></li>&ensp;&ensp;&ensp;&ensp;
+                    <li><a href="Login.html" id="logout">Log out</a>
+            </ul></b>
+        </div>
+
+        <div class="main">
+
+    </header><br><br>
+
+    <section id="h2">
+        <div class="main">
+            <div class="logo">
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <h1>| Payment</h1><img src="cards.jpg" style="float: right; margin-right: 90px;
+                    top: 200px;
+                    left: 850px; width: 280px;" id="img">
+                </div><br><br>
+
+                <div class="form"><br>
+                    &emsp;&emsp;Card Information<br><br>
+                    &emsp;&emsp;<input type="tel" placeholder="Card Number" id="cardno">&emsp;&emsp;
+                    &emsp;&emsp;<input type="text" placeholder="Name on Card" id="nameoncard">&emsp;&emsp;<br><br><br>
+                    &emsp;&emsp;<input placeholder="Expiry"  id="expiry">&emsp;&emsp;
+                    &emsp;&emsp;<input type="text" placeholder="CVV Code" id="cvv">&emsp;&emsp;<br><br><br>
+                    &emsp;&emsp;Country &ensp;<select name="country">
+                        <option value="none"></option>
+                        <option value="america">America</option>
+                        <option value="australia">Australia</option>
+                        <option value="philippines">Philippines</option>
+                    </select><br><br><br>
+                    &emsp;&emsp;<input type="text" placeholder="City" id="city">&emsp;
+                    &emsp;&emsp;<input type="text" placeholder="State" id="state">&emsp;
+                    &emsp;&emsp;<input type="tel" placeholder="ZIP" id="zip">&emsp;&emsp;<br><br><br>
+
+                    &emsp;&emsp;<button type="button"><a href="PassengerInfo.html"><b>Confirm</b></a></button>
+                </div>
+            </div>
+    </section>
+
+
+
+</body>
+
+</html>

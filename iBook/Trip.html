@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>| Trip</title>
+    <link rel="icon" href="ibook.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<script src="lightpick.js"></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bolder;
+        }
+
+        #h1 {
+            background-image: linear-gradient(#EA8070, #EA8054);
+            height: 23vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #h2 {
+            background-color: #fff;
+            height: 77vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        ul {
+            float: left;
+            list-style-type: none;
+            margin-top: 60px;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.6s ease;
+        }
+
+        ul li a:hover {
+            background-color: #fff;
+            color: #EA8054;
+        }
+
+        .logo img {
+            float: right;
+            width: 100px;
+            height: auto;
+            padding-top: 40px;
+        }
+
+        .main {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        ul li.active a {
+            background-color: #fff;
+            color: #EA8054;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .btn {
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.6s ease;
+
+        }
+
+        .btn:hover {
+            background-color: #EA8054;
+            color: #fff;
+        }
+
+        .s2 {
+            color: #fff;
+            height: 100vh;
+        }
+
+        h2 {
+            padding-top: 220px;
+            font-size: 60px;
+            color: #fff;
+        }
+
+        button {
+            color: rgb(185, 113, 80);
+            background-color:#fff;
+            width: 150px;   
+            height: 50px;
+            border: 3px solid #fff;
+            border-radius: 35px;
+            font-size: 14px;
+            box-shadow: 1px 6px 12px rgba(75, 55, 32, 0.3);
+            margin-bottom: 30px;
+            margin-top: 10px;
+            
+        }
+
+        input[type=date]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            display: none;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bolder;
+            color: rgb(211, 95, 66);
+        }
+
+        input {
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+
+        .form {
+            font-weight: bold;
+            position: relative;
+            padding-left: 290px;
+            color: rgb(70, 70, 70);
+        }
+
+        #search{
+            margin-left: 180px;
+            color: #fff;
+            background-color:  rgb(240, 122, 93);
+            border: 1px solid rgb(240, 122, 93);
+            
+        }
+
+        #seat{
+            margin-left: 160px;
+            color: rgb(77, 77, 77);
+        }
+
+        #oneway, #roundtrip{
+            width: 120px;
+            margin-left: 50px;
+            border-radius: 10px;
+            background-color: rgb(240, 122, 93);
+            border: 3px solid rgb(240, 122, 93);
+            color: #fff;
+            
+        }
+
+        #pick{
+            width: 100px;
+            height: 50px;
+            margin-left: 90px;
+            border-radius: 10px;
+            font-size: 12px;
+            background-color:  rgb(252, 150, 106);
+            border: 1px solid rgb(252, 150, 106);
+            color: #fff;
+        
+        }
+
+        .dropdown{
+            margin-left: 300px;
+            color: rgb(66, 66, 66);
+        }
+
+        #date{
+            margin-left: 18px;
+        }
+
+            a{ 
+                text-decoration: none;
+                color: white;
+            } 
+            
+            #select{
+            width: 120px;
+            margin-left: 50px;
+            border-radius: 10px;
+            background-color: rgb(240, 240, 240);
+            border: 1px solid rgb(233, 233, 233);
+            color: rgb(73, 73, 73);
+            }
+
+    </style>
+</head>
+
+<body>
+    <!-- Section 1 -->
+   <b> <header id="h1">
+        <div class="main">
+            <div class="logo">
+                <img src="ibook2.png">
+            </div>
+            <ul><b>
+                <li><a href="Home.html" id="home">Home</a></li>
+                <li><a href="Flights.html" id="flights">Flights</a></li>
+                <li><a href="Rewards.html" id="rewards">Rewards</a></li>
+                    <li><a href="#" id="profile">Profile</a></li>
+                    <li><a href="#" id="settings">Settings</a></li>&ensp;&ensp;&ensp;&ensp;
+                    <li><a href="Login.html" id="logout">Log out</a>
+            </ul></b>
+        </div>
+
+        <div class="main">
+
+    </header>
+
+    <section id="h2">
+        <div class="main"><br><h1>| Air Flights</h1>
+            <div class="col-lg-6">
+                <div class="form">
+                    <button id="oneway"><b>ONE-WAY</b></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button id="roundtrip"><b>ROUNDTRIP</b></button>
+                </div>
+                <div class="form">
+                    <button id="select"><b>From</b></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button id="select"><b>To</b></button>
+                </div>
+            <div class="col-lg-6">
+                <div class="form">
+                    DEPART <input type="date" id="date">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  RETURN <input type="date" id="date">
+                </div><br><br>
+            </div><br>
+            <div class="col-lg-6">
+                <div class="dropdown"><br>
+                    <b>ADULT</b> (age 12 & over)&ensp;<select name="country">&emsp;
+                        <option value="none"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>&emsp;
+                    <b>CHILD</b> (age 2-11) &ensp;<select name="country">&emsp;
+                        <option value="none"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>&emsp;
+                    <b>INFANT</b> (below age 2) &ensp;<select name="country">&emsp;
+                        <option value="none"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>&emsp;
+                </div>
+            </div><br><br>
+            <div class="col-lg-6">
+                <div id="seat" class="form">
+                        SEAT CLASS &ensp;<select name="country">
+                            <option value="none"></option>
+                            <option value="economy">Economy</option>
+                            <option value="business">Business</option>
+                            <option value="first">First Class</option>
+                            <option value="premium">Premium Economy</option>
+                        </select> 
+                </div>
+            </div><br><br>
+            <div class="col-lg-6">
+                <div class="form">
+                    <button id="search"><a href="Schedule.html"><b>SEARCH FLIGHTS</b></a></button>
+                </div><br><br>
+            </div>
+
+    </section>
+
+
+</body>
+
+</html>

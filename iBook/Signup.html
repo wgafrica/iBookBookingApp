@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>| Signup</title>
+    <link rel="icon" href="ibook.png">
+    </link>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+        h1 {
+            color: white;
+            font-family: 'Fair Prosper';
+            font-size: 55px;
+            font-weight: bold;
+            text-align: center;
+            padding-right: 50px;
+            margin-bottom: -2px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+
+        }
+
+        h2 {
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            font-weight: lighter;
+            text-align: center;
+            margin-top: -40px;
+        }
+
+
+        input {
+            border-radius: 10px;
+            border: 1px solid white;
+            padding: 15px;
+            width: 235px;
+            height: 6px;
+            margin-left: 10px;
+        }
+
+        .login {
+
+            margin-left: auto;
+            margin-right: auto;
+            width: 960px;
+        }
+
+        .form {
+            background-image: linear-gradient(#EA8068, #EA8054);
+            margin-top: -15px;
+            padding-bottom: 30px;
+            border-radius: 10px;
+            margin-left: 220px;
+            margin-right: 220px;
+            opacity: 0.9;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            font-size: 17px;
+            font-weight: bold;
+            padding-left: 50px;
+
+        }
+
+        .button {
+            color: #676767;
+            background-color: #fff;
+            width: 110px;
+            height: 50px;
+            margin-top: 30px;
+            border: 3px solid white;
+            border-radius: 35px;
+            font-size: 14px;
+            margin-left: 145px;
+            box-shadow: 1px 6px 12px rgba(75, 55, 32, 0.493);
+            text-decoration: none;
+
+        }
+
+        #trouble {
+            padding-left: 155px;
+            font-size: 15px;
+        }
+
+        #fName,
+        #lName {
+            margin-left: 50px;
+            width: 200px;
+            height: 6px;
+        }
+
+        #Email {
+            margin-left: 93px;
+            width: 200px;
+            height: 6px;
+        }
+
+        #Password,
+        #Retype {
+            margin-left: 60px;
+            width: 171px;
+            height: 6px;
+        }
+
+        #Retype {
+            margin-left: 30px;
+            width: 171px;
+            height: 6px;
+        }
+
+        #Birthday {
+            margin-left: 71px;
+            width: 100px;
+            height: 6px;
+        }
+
+        #Gender {
+            margin-left: 76px;
+        }
+
+        #Mobile {
+            width: 150px;
+            height: 6px;
+            margin-left: 14px;
+        }
+
+        input[type=date]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            display: none;
+        }
+
+        .radio1 {
+            height: 15px;
+            margin-left: -30px;
+
+        }
+
+        .radio2 {
+            height: 15px;
+            margin-left: 29px;
+
+        }
+
+        .radio3 {
+            height: 15px;
+            margin-left: 29px;
+        }
+
+        .gender {
+            padding-left: 137px;
+            margin-top: -20px;
+            width: 10px;
+        }
+    </style>
+</head>
+
+<body style="background-image:url('airport.jpg'); background-size:cover;">
+    <div class="login">
+        <div class="form">
+
+            <h1>iBook</h1>
+
+            First Name<input type="text" name="FirstName" id="fName"><br><br>
+            Last Name<input type="text" name="LastName" id="lName"><br><br>
+            Mobile Number<input type="tel" name="Mobile" id="Mobile"><br><br>
+            Email<input type="text" name="Email" id="Email"><br><br>
+            Password<input type="password" name="Password" id="Password"><br><br>
+            Re-type Pass<input type="password" name="Password" id="Retype"><br><br>
+            Birthday<input type="date" name="Birthday" id="Birthday"><br><br>
+            Gender<form class="gender" action="/action_page.php">
+                <select name="cars">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </form><br>
+            <button class="button" onclick="alert('Account created successfully!')"><a href="Login.html"><b>SIGN UP</b></a></button>
+        </div>
+    </div>
+</body>
+
+
+</html>

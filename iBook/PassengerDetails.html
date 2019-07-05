@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>| Passenger Details</title>
+    <link rel="icon" href="ibook.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        
+    </script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #h1 {
+            background-image: linear-gradient(#EA8070, #EA8054);
+            height: 23vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #h2 {
+            background-color: #fff;
+            height: 70vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        ul {
+            float: left;
+            list-style-type: none;
+            margin-top: 60px;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.6s ease;
+        }
+
+        ul li a:hover {
+            background-color: #fff;
+            color: #EA8054;
+        }
+
+        .logo img {
+            float: right;
+            width: 100px;
+            height: auto;
+            padding-top: 40px;
+        }
+
+        .main {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        ul li.active a {
+            background-color: #fff;
+            color: #EA8054;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .btn {
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.6s ease;
+
+        }
+
+        .btn:hover {
+            background-color: #EA8054;
+            color: #fff;
+        }
+
+        .s2 {
+            color: #fff;
+            height: 100vh;
+        }
+
+        h2 {
+            padding-top: 220px;
+            font-size: 60px;
+            color: #fff;
+        }
+
+        button {
+            color: #fff;
+            background-color: rgb(240, 122, 93);
+            width: 110px;
+            height: 50px;
+            border: 3px solid rgb(240, 122, 93);
+            border-radius: 35px;
+            font-size: 14px;
+            box-shadow: 1px 6px 12px rgba(75, 55, 32, 0.3);
+            margin-bottom: 30px;
+            margin-top: 10px;
+            position: center;
+            margin-left: 30px;
+        }
+
+        input[type=date]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            display: none;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(211, 95, 66);
+                    }
+
+        input{
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+
+        .form{
+            font-weight: bold;
+            color: rgb(66, 66, 66);
+            background-color: rgb(236, 236, 236);
+            width: 650px;
+            border-radius: 10px;
+        }
+
+        a{
+                text-decoration: none;
+                color: white;
+            }
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Section 1 -->
+    <header id="h1">
+        <div class="main">
+            <div class="logo">
+                <img src="ibook2.png">
+            </div>
+            <ul><b>
+                    <li><a href="Home.html" id="home">Home</a></li>
+                    <li><a href="Flights.html" id="flights">Flights</a></li>
+                    <li><a href="Rewards.html" id="rewards">Rewards</a></li>
+                    <li><a href="#" id="profile">Profile</a></li>
+                    <li><a href="#" id="settings">Settings</a></li>&ensp;&ensp;&ensp;&ensp;
+                    <li><a href="Login.html" id="logout">Log out</a>
+            </ul></b>
+        </div>
+
+        <div class="main">
+
+    </header><br><br>
+
+    <section id="h2">
+        <div class="main">
+            <div class="logo">
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <h1>Passenger Details</h1><img src="family.jpg" style="float: right; margin-right: 90px;
+                    top: 200px;
+                    left: 850px;
+                    ; width: 400px;" id="img">
+                </div><br><br>
+
+                <div class="form"><br>
+                    &emsp;&emsp;Title&ensp;<select id="title">
+                        <option value="none"></option>
+                        <option value="mr">Mr.</option>
+                        <option value="ms">Ms.</option>
+                    </select> &emsp;&emsp;
+                    <input type="text" placeholder="First Name" id="fName">&emsp;&emsp;
+                    <input type="text" placeholder="Last Name" id="lName"><br><br><br> 
+                    &emsp;&emsp;Date of Birth &ensp;<input type="date" name="Birthday" id="Birthday">&emsp;&emsp;
+                    &emsp;&emsp;Nationality &ensp;<select name="nationality">
+                        <option value="none"></option>
+                        <option value="american">American</option>
+                        <option value="australian">Australian</option>
+                        <option value="filipino">Filipino</option>
+                    </select><br><br><br>
+                    &emsp;&emsp;<input type="tel" placeholder="Mobile Number" id="Mobile">&emsp;&emsp;
+                    &emsp;&emsp;Passenger Type &ensp;<select name="nationality">
+                        <option value="none"></option>
+                        <option value="adult">Adult</option>
+                        <option value="child">Child</option>
+                        <option value="infant">Infant</option>
+                    </select><br><br><br>
+                    &emsp;&emsp;<input type="text" placeholder="Email" id="Email">&emsp;&emsp; 
+                    &emsp;&emsp;Class &ensp;<select name="nationality">
+                        <option value="none"></option>
+                        <option value="economy">Economy</option>
+                        <option value="business">Business</option>
+                    </select><br><br><br>
+
+
+                    <button class="btnAdd"><b id="add">Add</b></button>&emsp;<button type="button"><a href="Payment.html"><b>Confirm</b></a></button>
+                </div>
+            </div>
+    </section>
+
+
+
+</body>
+
+</html>

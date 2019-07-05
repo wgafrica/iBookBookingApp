@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>| Flights</title>
+    <link rel="icon" href="ibook.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #h1 {
+            background-image: linear-gradient(#EA8070, #EA8054);
+            height: 45vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #h2 {
+            background-color: #fff;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        ul {
+            float: left;
+            list-style-type: none;
+            margin-top: 60px;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.6s ease;
+        }
+
+        ul li a:hover {
+            background-color: #fff;
+            color: #EA8054;
+        }
+
+        .logo img {
+            float: right;
+            width: 150px;
+            height: auto;
+            padding-top: 40px;
+        }
+
+        .main {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        ul li.active a {
+            background-color: #fff;
+            color: #EA8054;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .btn {
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.6s ease;
+
+        }
+
+        .btn:hover {
+            background-color: #EA8054;
+            color: #fff;
+        }
+
+        .s2 {
+            color: #fff;
+            height: 100vh;
+        }
+
+        h2 {
+            padding-top: 220px;
+            font-size: 60px;
+            color: #fff;
+        }
+
+        h3 {
+            padding-top: 50px;
+            font-size: 60px;
+        }
+
+        p {
+            padding-top: 25px;
+        }
+
+        #Pflights {
+            font-size: 15px;
+            padding-bottom: 100px;
+        }
+
+        #img {
+            width: 300px;
+            height: 150px;
+        }
+
+        .ph {
+            float: right;
+            padding-right: 300px;
+            font-size: 30px;
+            color: rgb(34, 34, 34)
+        }
+
+        #ph {
+            width: 300px;
+        }
+
+        button {
+            color: #fff;
+            background-color: rgb(226, 152, 83);
+            width: 130px;
+            height: 50px;
+            border: 3px solid rgb(226, 152, 83);
+            border-radius: 35px;
+            font-size: 14px;
+            box-shadow: 1px 6px 12px rgba(75, 55, 32, 0.493);
+            margin-bottom: 30px;
+            margin-top: 10px;
+            position: center;
+        }
+
+        .search-container {
+            float: right;
+            margin-top: -30px;
+
+        }
+
+        
+
+        #search {
+            border-radius: 1px;
+            width: 220px;
+            height: 40px;
+            border-radius: 5px;
+            border: 3px solid #fff;
+        }
+
+        #searchbutton {
+            border-radius: 5px;
+            width: 50px;
+            height: 45px;
+            background-color: #fff;
+            border: 3px solid #fff;
+            box-shadow: none;
+            color:#EA8054
+            }
+            
+            
+    </style>
+</head>
+
+<body>
+    <!-- Section 1 -->
+    <header id="h1">
+        <div class="main">
+            <div class="logo">
+                <img src="ibook2.png">
+            </div>
+            <ul><b>
+                    <li><a href="Home.html" id="home">Home</a></li>
+                    <li class="active"><a href="#" id="flights">Flights</a></li>
+                    <li><a href="#" id="rewards">Rewards</a></li>
+                    <li><a href="#" id="profile">Profile</a></li>
+                    <li><a href="#" id="settings">Settings</a></li>
+            </ul></b>
+        </div>
+
+        <div class="main">
+            <div>
+                <h2>What's Hot</h2>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input id="search" type="text" placeholder="Search flights.." name="search">
+                        <button id="searchbutton" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+    </header><br><br>
+
+    <section id="h2">
+        <div class="main">
+            <div class="logo">
+            </div>
+
+        </div>
+
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6"><br>
+                        <div class="ph"><b>PHILIPPINES</b><br>
+                            <p id="Pflights"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Curabitur
+                                    tempus tortor et enim posuere congue. Pellentesque suscipit<br>elit mollis vehicula
+                                    imperdiet, sem felis vehicula odio</i></p><br>
+                        </div>
+                        <img src="PH.jpg" id="img">
+                        <button type="button"><a href="Flights2.html" style="text-decoration: none; color: #fff;"><b>BOOK NOW</b></a></button>
+                        <div class="col-lg-6"><br>
+                            <div class="ph"><b>AUSTRALIA</b><br>
+                                <p id="Pflights"><i>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.<br>Curabitur tempus tortor et enim posuere congue. Pellentesque
+                                        suscipit<br>elit mollis vehicula imperdiet, sem felis vehicula odio</i></p>
+                            </div>
+                            <img src="AUS.jpg" id="img">
+                            <button type="button"><b>BOOK NOW</b></button>
+                        </div>
+                        <div class="col-lg-6"><br>
+                            <div class="ph"><b>JAPAN</b><br>
+                                <p id="Pflights"><i>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.<br>Curabitur tempus tortor et enim posuere congue. Pellentesque
+                                        suscipit<br>elit mollis vehicula imperdiet, sem felis vehicula odio</i></p>
+                            </div>
+                            <img src="JAP.jpg" id="img">
+                            <button type="button"><b>BOOK NOW</b></button>
+                        </div>
+                        <div class="col-lg-6"><br>
+                            <div class="ph"><b>UAE</b><br>
+                                <p id="Pflights"><i>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.<br>Curabitur tempus tortor et enim posuere congue. Pellentesque
+                                        suscipit<br>elit mollis vehicula imperdiet, sem felis vehicula odio</i></p>
+                            </div>
+                            <img src="UAE.jpg" id="img">
+                            <button type="button"><b>BOOK NOW</b></button>
+                        </div>
+                        <div class="col-lg-6"><br>
+                            <div class="ph"><b>THAILAND</b><br>
+                                <p id="Pflights"><i>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.<br>Curabitur tempus tortor et enim posuere congue. Pellentesque
+                                        suscipit<br>elit mollis vehicula imperdiet, sem felis vehicula odio</i></p>
+                            </div>
+                            <img src="THAI.jpg" id="img">
+                            <button type="button"><b>BOOK NOW</b></button>
+                        </div>
+
+                    </div>
+                </div>
+                <br><br>
+
+    </section>
+
+</body>
+
+</html>
